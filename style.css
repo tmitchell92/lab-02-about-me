@@ -1,12 +1,6 @@
- /** {
-  font-weight: normal;
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  display: block;
-  font-size: 30px;
 
-}*/
 body {
   background-color: green;
+  font-family: monospace;
+  font-size: 30px;
 }
