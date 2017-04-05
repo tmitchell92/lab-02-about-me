@@ -51,34 +51,43 @@
 // }
 // console.log('Do I wear contacts? '  + contacts);
 var fav_num = 7;
-for(var i = 4; i > 0 || fav_num; i--)
+var stop = true;
+for(var i = 0; i < 4 && stop==true; i++)
 {
-  var guess = prompt('What is my favorite number?')
-  guess = parseInt(guess)
+  console.log(i);
+  var guess = prompt('What is my favorite number?');
+  guess = parseInt(guess);
   if (guess === fav_num){
-    alert('Correct!')
-    fav_num = false
+    stop=!stop;
+    // i=4;
+    alert('Correct!');
+
   }
   else if (guess < fav_num){
-    alert('too low')
+    alert('too low');
   }
   else if (guess > fav_num){
-    alert('too high')
+    alert('too high');
   }
   else if(i===1)
   {
-    alert('You are out of guesses')
+    alert('You are out of guesses');
   }
 }
-}
-var fav_Poke = ['gengar','bulbasuar','charizard','scyther']
-for(var i=6; i > 0 || fav_Poke; i--)
-{
-  var poke_guess= prompt('What is my favorite Pokemon?')
-  poke_guess.trim().toLowerCase()
-  if (poke_guess === fav_Poke){
-    alert('Congrats')
-    fav_color = false
-  }
-  else if( )
-}
+// var fav_Poke = ['gengar','bulbasuar','charizard','scyther']
+// var end = true
+// for(var i=6; i > 0 || end; i--)
+// {
+//   var poke_guess= prompt('What is my favorite Pokemon?')
+//   poke_guess.trim().toLowerCase()
+//
+//   if (poke_guess === fav_Poke[0] || poke_guess === fav_Poke[1] ||poke_guess === fav_Poke[2] || poke_guess === fav_Poke[3]){
+//     alert('Congrats, ' + 'the correct answers are one of these: ' + fav_Poke)
+//     end = false
+//   }
+//   else if(i === 1){
+//     alert('Sorry but you have used all of your guesses, the correct answers is one of the following: ' + fav_Poke)
+//     end = false
+//   }
+//
+// }
