@@ -62,22 +62,22 @@ else {
 console.log('Do I wear contacts? '  + contacts);
 }
 funContacts();
-var fav_num = 7;
+var favNum = 7;
 var stop = true;
 function funNum(){for(var i = 0; i < 4 && stop==true; i++)
 {
   console.log(i);
   var guess = prompt('What is my favorite number?');
   guess = parseInt(guess);
-  if (guess === fav_num){
+  if (guess === favNum){
     stop=!stop;
     alert('Correct!');
     numCorrect++
   }
-  else if (guess < fav_num){
+  else if (guess < favNum){
     alert('too low');
   }
-  else if (guess > fav_num){
+  else if (guess > favNum){
     alert('too high');
   }
   else if(i===3)
